@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  .app {
+    margin-top: 50px;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .password-input input {
+    width: 70%;
+    padding: 0.6rem;
+    margin-right: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .password-input button {
+    padding: 0.6rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .password-input button:hover {
+    background-color: #2980b9;
+  }
+  
+  .password-strength {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+  }
+  
+  .password-controls {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .password-controls button {
+    padding: 0.6rem;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .password-controls button:hover {
+    background-color: #27ae60;
+  }
+  
+  .copiado-msg {
+    text-align: center;
+    color: #16a085;
+    font-size: 0.9rem;
+    animation: fadeout 3s forwards;
+  }
+  
+  @keyframes fadeout {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .advanced-panel {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  
+  .advanced-panel label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .advanced-panel input[type="number"] {
+    width: 60px;
+    padding: 0.4rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
+ .password-strength {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.strength-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.strength-fill {
+  height: 100%;
+  transition: width 0.4s ease;
+  border-radius: 8px;
+  display: block;
+}
+
+  
